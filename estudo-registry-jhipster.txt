@@ -1,0 +1,8 @@
+- O Jhipster Registry tem três propósitos:
+	
+	1 - Ser um servidor Eureka, para ser um discovery server para aplicativos.
+	    É assim que o Jhipster lida com roteamento, balanceamento de carga e escabilidade para todas as aplicações.
+	
+	2 - É um servidor Spring Cloud Config, que fornece configuração de tempo de execução para todos os aplicativos.
+	
+	3 - É um servidor de administração, com paineis para monitorar e gerenciar aplicativos.

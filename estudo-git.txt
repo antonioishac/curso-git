@@ -1,0 +1,71 @@
+- Clonando um repositório
+	git clone https://github.com/antonioishac/EstudyCollections.git
+	
+- verificando a versão da tag
+	git tag
+	
+- trocando de versão
+	git checkout v0.1
+	
+- diferença entre versões
+	git diff v0.1 v0.2
+	
+- comando para dizer que uma pasta será um repositório do git
+	git init
+	
+- verificando os arquivos que pertence ao git no repositório
+	git lf-files
+	
+- verificando o status dos arquivos no git
+	git status
+
+- informando ao git que devemos adicionar um arquivo ao repositório
+	git add index.html
+	
+- informando ao git todos os arquivos
+	git add .
+
+- configurando variaveis
+	git config user.name "Antonio Ishac"
+    git config user.email "antonioishac@gmail.com"
+
+- configurando variaveis globalmente
+	
+	git config --global user.name "Antonio Ishac"
+	git config --global user.email "antonioishac@gmail.com"
+	
+- realizando commit
+	git commit -m "primeiro commit"
+	para verificar, realize o comando "git status" para verificar o estado.
+
+- alterando o arquivo index.html, "git status", verifica que realmente modificamos esse arquivo.
+  Precisamos rodar o comando "git add index.html" novamente.
+  Feito isso, estamos pronto para realizar o commit " --> git commit -m "conteudo da pagina index" <--".
+  
+  git commit -a
+
+ 
+- A opção -a inclui imediatamente no commit todos os arquivos modificados ou removidos! 
+  Porém, ela não adiciona os arquivos novos. Podemos combinar a opção de mensagem com:
+  git commit -a -m 'Mensagem de commit' 
+  para não precisar escrever a mensagem no editor padrão do console.
+  
+- mandando nossos arquivos para o github
+	- criando o nome do repositório no github
+	- Agora que temos um repositório remoto, 
+	  precisamos configurá-lo para sincronizar com o repositório local. 
+	  Para isso, precisamos ir ao diretório do repositório local no terminal e executar o seguinte comando:
+	  " git remote add origin https://github.com/antonioishac/curso-git.git "
+	- enviando os commits relalizados para o repositório:
+	  git push origin master
+	  
+- Mostrando o log dos commits
+	git log
+	
+- Mostrando opções detalhadas dos commits
+	git whatchanged
+	
+- Mostrando opções detalhadas dos commits, é possível visualizar quais as linhas que foram modificadas em cada commit do nosso projeto.
+	git whatchanged
+	
+----------------------------------------------------------------------------------------------------------------------------------------------------------
