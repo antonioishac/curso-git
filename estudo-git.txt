@@ -69,3 +69,47 @@
 	git whatchanged
 	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- comando para criar uma nova branch
+	git branch design
+
+- comando para listar as branches locais
+	git branch
+
+- comando para trocar de branch
+	git checkout design
+	
+- Uma tarefa bem comum é a criação de uma nova branch seguida da troca para essa branch criada. 
+  Poderíamos fazer isso com a sequência de comandos git branch nomeDaBranch e git checkout nomeDaBranch. 
+  Para facilitar, o Git nos fornece uma opção do comando git checkout que realiza este trabalho. Qual a opção que deve ser passada para realizar tal tarefa?
+	git branch -b design
+	
+- comando para remover uma branch
+	git branch -d design
+	
+	caso não esteja sincronozada, e haja a necessidade de exclusão, podemos forçar
+	git branch -D design
+	
+- criando uma branch remota
+	git push -u origin design
+	
+- comando para listar somente as branch remotas
+	git branch -r
+	
+- comando para listar as branch locais e remotas
+	git branch -r
+	
+- Uma sequência de tarefas bem comum referente à cópia de uma branch localizada num repositório remoto é:
+	Criação de uma branch local com o mesmo nome da branch remota
+	Mudança para essa nova branch criada
+	Criação de link entre a branch local e remota
+  Para evitar toda essa tarefa, o git nos fornece um atalho para evitar esse trabalho todo com uma opção do comando git checkout. Que opção é essa?
+	git checkout -t origin/design
+  Com o comando git checkout -t origin/design, todo esse trabalho é feito automaticamente para a branch chamada design.
+
+- comando para remover uma branch remota
+	git push -d origin design
+	
+- comando para saber se foram criadas branches novas no repositório remoto
+	git fetch origin
+  Este comando verifica todas as atualizações que foram realizadas no repositório de atalho origin.
